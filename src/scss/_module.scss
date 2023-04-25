@@ -1,0 +1,99 @@
+@mixin module_card_text($weight, $size, $line_height, $font_family) {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $font_family;
+}
+.module_cardmain {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 24px 24px 0px 24px !important;
+  .module_cardtitle {
+    p {
+      @include module_card_text(500, 18px, 24px, $font-jakarta-med);
+      color: $cardmoduletextbody;
+    }
+  }
+  .module_card_information {
+    position: relative;
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        list-style: none;
+        color: $card_module_info;
+        @include module_card_text(400, 14px, 21.7px, $font-jakarta-light);
+      }
+      li:nth-child(2) {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        top: 6px;
+        left: 51px;
+        background-color: $card_module_info;
+        margin-left: 1%;
+      }
+      li:last-child {
+        margin-left: 10%;
+      }
+    }
+  }
+  .module_circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 3px solid #e0e0e0ff;
+    transform: rotate(-50deg);
+    border-right-color: $card_module_icon_color;
+    position: relative;
+    text-align: center;
+    p {
+      @include module_card_text(400, 16px, 24px, $font-jakarta-light);
+      position: absolute;
+      left: 32%;
+      right: 26%;
+      bottom: 15%;
+      transform: rotate(50deg);
+    }
+  }
+  .card_module_state {
+    .col-md-6 {
+      p {
+        @include module_card_text(400, 15px, 24px, $font-jakarta-light);
+        color: $cardmoduletextbody;
+      }
+      i {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 1px solid $card_module_icon_color;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        label {
+          position: absolute;
+          font-size: 8px;
+          top: 1px;
+          left: 3px;
+          color: $card_module_icon_color;
+        }
+      }
+    }
+  }
+  .card_module_button{
+    button{
+        @include module_card_text(600, 16px, 24px, $font-jakarta-med);
+        color: $cardmoduletextbody;
+        border: none;
+        background-color: transparent;
+    }
+    i{
+        font-size: 12px;
+        
+    }
+  }
+}

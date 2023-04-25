@@ -1,0 +1,22 @@
+.category_main{
+    width: 296px;
+    height: 80px;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 24px;
+    background-color: $cardmoduletextbody;
+    i{
+        color: white;
+        font-size: 24px;
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: $font-jakarta-med;
+        margin-left: 9%;
+    }
+}

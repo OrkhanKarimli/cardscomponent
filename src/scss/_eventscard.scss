@@ -1,0 +1,70 @@
+@mixin events_text($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+  }
+.eventscard_main{
+      border-radius: 16px;
+ 
+  .row{
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #E0E0E0;
+  }
+  .events_image{
+    width: 100%;
+    height: 234px;
+    background-image: url(../image/eventsimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-color: gray;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .col-md-12{
+    padding: 24px 24px 0px 24px;
+    ul{
+        padding: 0;
+        list-style: none;
+        li{
+            list-style: none;
+
+        }
+        li:first-child{
+          p{
+            @include events_text(16px,500 ,24.3px ,$cardmoduletextbody );
+            font-family: $font_jakarta_med;
+          }           
+        }
+        li:nth-child(2) {
+            p {
+              @include events_text(16px,400,24px,$infocolor);
+              font-family: $font_jakarta_light;
+              margin: 0;
+            }
+          }
+          li:last-child {
+            
+            i{
+                display: inline-block;
+            }
+            p {
+              @include events_text(14px,400,21.7px,$infocolor);
+              font-family: $font_jakarta_light;
+              display: inline-block;
+              margin-left: 2%;
+            }
+            h4{
+                @include events_text(32px,bold,38.4px,$cardmoduletextbody);
+                font-family: 'General Sans', sans-serif;
+                display: inline-block;
+                margin-left: 43%;
+                margin-bottom: 0%;
+            }
+          }
+          
+    }
+  }
+}
