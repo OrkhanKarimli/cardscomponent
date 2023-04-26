@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Socialproof from "./components/Socialproof"; 
+import {Courseprogress} from "./components/Courseprogress"
 function App() {
   return(
-<Socialproof/>
+<Courseprogress cardTitle="UX Design Foundations" authorName="Sen Janson" percent="50%"/>
   ) 
 }
 

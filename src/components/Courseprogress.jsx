@@ -1,6 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-const Courseprogress = () => {
+export const Courseprogress = ({
+  cardTitle,
+  authorName,
+  percent
+}
+ 
+) => {
   return (
     <div
       className="container"
@@ -11,14 +17,14 @@ const Courseprogress = () => {
           <div className="course_img"></div>
           <div className="col-md-12">
             <ul>
-              <li><p>UX Design Foundations</p></li>
-              <li><p>Sen Janson</p></li>
+              <li><p>{cardTitle}</p></li>
+              <li><p>{authorName}</p></li>
               <li></li>
               <li className="d-flex justify-content-between">
                 <p>
                 Course progress
                 </p>
-               <label>50%</label> 
+               <label>{percent}</label> 
               </li>
             </ul>
           </div>
