@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Authorxs from "./components/Authorxs";
+import Landingpage from "./components/Landingpage"; 
 function App() {
   return(
-<Authorxs/>
+<Landingpage/>
   ) 
 }
 
