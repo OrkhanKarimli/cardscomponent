@@ -42,6 +42,7 @@
         border-bottom: 2px solid #E0E0E0;
         position: relative;
         align-items: baseline;
+        display: flex;
         p:first-child{
             @include course_text(16px, 400, 24px, $card_module_info);
             font-family: $font_jakarta_light;
@@ -81,12 +82,15 @@
      }
       }
       li:last-child{
+        display: flex;
         label{
             margin-right: 3%;
+            display: flex;
             p{
                 @include course_text(14px, 400, 21.7px, $card_module_info);
                 display: inline-block;
                     font-family: $font_jakarta_light;
+                    
             }
            
         }
