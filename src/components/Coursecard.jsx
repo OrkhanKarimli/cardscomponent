@@ -13,7 +13,9 @@ const Coursecard = () => {
       <div className="row">
         <div className="col-md-4 coursecard_main">
           <div className="row">
-            <div className="coursecard_image"></div>
+            <div className="coursecard_image">
+              
+            </div>
             <div className="col-md-12">
               <ul>
                 <li>
