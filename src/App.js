@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Landingpage from "./components/Landingpage"; 
+import Socialproof from "./components/Socialproof"; 
 function App() {
   return(
-<Landingpage/>
+<Socialproof/>
   ) 
 }
 

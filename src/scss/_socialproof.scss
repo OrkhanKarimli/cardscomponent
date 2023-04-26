@@ -1,0 +1,34 @@
+*{
+    overflow-x: hidden;
+}
+.social_proof_main{
+    padding: 28px;
+    text-align: center;
+    p{
+        margin-bottom: 3%;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $font-jakarta-light;
+        line-height: 24.3px;
+        label{
+            color: $card_module_info;
+            display: inline;
+            margin-right: 1%;
+        }
+
+    }
+    .logos{
+       
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li{
+                list-style: none;
+                margin-right: 2%;
+
+            }
+        }
+    }
+}
