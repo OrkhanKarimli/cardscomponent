@@ -1,0 +1,77 @@
+@mixin authors_page_text($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+  }
+.authors_page_main{
+    padding: 100px 124px 100px 124px !important; 
+    background-color: $infoiconcol;
+    position: relative;
+    i{
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+    .authorpage-left{
+        z-index: 999;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+            
+            }
+            li:first-child{
+                h2{
+                    @include authors_page_text(52px,500 ,57.2px ,$author_info_color );
+                    font-family: 'General Sans' sans-serif;
+                 }
+            }
+            li:nth-child(2){
+                p{
+                    @include authors_page_text(18px,400 ,24.3px ,$landing_text_color );
+                }
+            }
+           
+                button{
+                    @include authors_page_text(16px,600 ,24px ,$card_module_icon_color );
+                    padding: 16px 32px 16px 32px;
+                    text-align: center;
+                    background-color: transparent;
+                    border: 1px solid $card_module_icon_color;
+                    border-radius: 1000px;
+                    margin-top: 5%;
+
+                }
+                button:focus{
+                    outline: none;
+                }
+            
+        }
+ 
+    }
+    .addborder{
+     border: 1px solid #515151;
+    }
+    .borderfix{
+        border-radius: 0px 0px 0px 0px 
+    }
+    .borderupleft{
+        border-radius: 16px 0px 0px 0px;
+    }
+    .borderupright{
+      border-radius: 0px 16px 0px 0px;
+    }
+    .borderdownleft{
+        border-radius: 0px 0px 0px 16px;
+    }
+    .borderdownright{
+        border-radius: 0px 0px 16px 0px;
+    }
+    .authorpage-right{
+        z-index: 999;
+    }
+}

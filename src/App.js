@@ -1,9 +1,10 @@
 import "./App.css";
 import "./scss/style.scss";
-import Popularcourses from "./components/Popularcourses";
+import Authorspage from "./components/Authorspage"
+
 function App() {
   return(
-<Popularcourses/>
+<Authorspage/>
   ) 
 }
 

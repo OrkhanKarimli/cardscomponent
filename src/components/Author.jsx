@@ -1,39 +1,46 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCube } from "@fortawesome/free-solid-svg-icons";
-const Author = () => {
+export const Author = ({
+  imgSrc,
+  authorName,
+  authorCourses,
+  authorPayment,
+  authorHourses,
+  authorSpeciality,
+  authorIcon,
+  authorClass
+}) => {
   return (
-    <div
-      className="container"
-      style={{ backgroundColor: "#F9F9F9", padding: "2%" }}
-    >
-      <div className="col-md-3 author_main text-center">
+ 
+      <div className={`col-md-3 author_main text-center ${authorClass}`}>
         <div className="row justify-content-center">
-          <div className="col-md-12 author_image "></div>
+          <div className="col-md-12 author_image ">
+            <img src={imgSrc}>
+            </img>
+          </div>
           <div className="col-md-12 author_information">
             <ul>
               <li>
-                <p>Ahmet Cetin</p>
+                <p>{authorName}</p>
               </li>
               <li>
-                <p>16 Courses</p>
+                <p>{authorCourses}</p>
               </li>
               <li>
-                <h4>$100</h4>
-                <p>/hours</p>
+                <h4>{authorPayment}</h4>
+                <p>{`/${authorHourses}`}</p>
               </li>
               <li>
                 <i>
-                  <FontAwesomeIcon className="icon" icon={faCube} />
+                  { authorIcon}
                 </i>
-                <p>3D Design</p>
+                <p>{authorSpeciality}</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
