@@ -1,0 +1,69 @@
+@mixin popular_text($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+  }
+  .popular-main{
+    padding: 100px 124px 100px 124px !important;
+    .popular-left{
+        h2{
+         @include popular_text(48px,bold,57.2px ,
+         $cardmoduletextbody );
+         font-family: 'General Sans',sans-serif;
+        }
+    }
+    .popular-right{
+     p{
+        @include popular_text(17px,400 ,24.3px ,
+        $card_module_info );
+        font-family: $font-jakarta-light;
+
+     }
+    }
+    .popular_courses_category{
+        margin-top: 5%;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            border-bottom: 1px solid $popularcoursestext;
+            width: 106%;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                padding: 0;
+                @include popular_text(16px,600 ,24px ,
+                $popularcoursestext);
+                margin-bottom: 2%;
+            }
+            li:first-child{
+                @include popular_text(16px,600 ,24px ,
+                $infoiconcol);
+            }
+        }
+    }
+   .marginadd{
+    margin-left: 4%;
+   }
+   .courses_button_main{
+    display: flex;
+    justify-content: center;
+    .coursesbutton{
+        padding: 16px 32px 16px 32px;
+        @include popular_text(16px,600 ,24px ,
+        $card_module_icon_color);
+        border-radius: 1000px;
+        border: 1px solid $card_module_icon_color;
+        background-color: transparent;
+        text-align: center;
+        margin-top: 8%;
+    
+       }
+       .coursesbutton:focus{
+        outline: none;
+       }
+   }
+   
+  }
+

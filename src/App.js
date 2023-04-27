@@ -1,11 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import courseimg from "../src/image/image118.png"
-import Coursecard from "./components/Coursecard"
+import Popularcourses from "./components/Popularcourses";
 function App() {
   return(
-<>
-</>
+<Popularcourses/>
   ) 
 }
 

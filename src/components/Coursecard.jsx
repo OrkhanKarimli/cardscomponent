@@ -5,28 +5,26 @@ import { ReactComponent as Staricon } from "../icons/Star.svg";
 import { ReactComponent as Clockicon } from "../icons/Clock.svg";
 import { ReactComponent as Stackicon } from "../icons/Stack.svg";
 import { ReactComponent as Beginer } from "../icons/Beginer.svg";
-const Coursecard = ({
+export const Coursecard = ({
   imgSrc,
   courseTitle,
   courseAuthor,
   coursePrice,
   courseTime,
   courseModules,
-  courseLevel
+  courseLevel,
+  className
 }) => {
   return (
-    <div
-      className="container"
-      style={{ backgroundColor: "#F9F9F9", padding: "2%" }}
-    >
-      <div className="row">
-        <div className="col-md-4 coursecard_main">
+
+     
+        <div className={`col-md-4 coursecard_main ${className}`}>
           <div className="row">
             <div className="coursecard_image">
               <img src={imgSrc}>
               </img>
             </div>
-            <div className="col-md-12">
+            <div  className="col-md-12">
               <ul>
                 <li>
                   <p>{courseTitle}</p>
@@ -51,15 +49,15 @@ const Coursecard = ({
                </label>
                <label>
                <i><Beginer/></i>
-              <p>{courseModules}</p>
+              <p>{courseLevel}</p>
                </label>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+     
+   
   );
 };
 
