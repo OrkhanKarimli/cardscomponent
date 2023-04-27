@@ -13,95 +13,88 @@
     border: 1px solid #e0e0e0;
   }
   .coursecard_image {
-    img{
+    display: contents;
+    img {
       width: fit-content;
       object-fit: cover;
       height: 234px;
       border-radius: 16px 16px 0px 0px;
     }
-    
-    // background-image: url(../image/courseimage.png);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-
-   
   }
   .col-md-12 {
     padding: 24px;
     ul {
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
       list-style: none;
       li {
         list-style: none;
       }
       li:first-child {
         p {
-            @include course_text(20px, 500, 26px, $cardmoduletextbody);
-            font-family: $font_jakarta_med;
+          @include course_text(20px, 500, 26px, $cardmoduletextbody);
+          font-family: $font_jakarta_med;
         }
       }
-      li:nth-child(2){
-        border-bottom: 2px solid #E0E0E0;
+      li:nth-child(2) {
+        border-bottom: 2px solid #e0e0e0;
         position: relative;
         align-items: baseline;
         display: flex;
-        p:first-child{
-            @include course_text(16px, 400, 24px, $card_module_info);
-            font-family: $font_jakarta_light;
-            margin-right: 2%;
-            display: inline-block;
+        p:first-child {
+          @include course_text(16px, 400, 24px, $card_module_info);
+          font-family: $font_jakarta_light;
+          margin-right: 2%;
+          display: inline-block;
         }
-        p:first-child::after{
-         content: "";
-         position: absolute;
-         width: 4px;
-         height: 4px;
-         border-radius: 50%;
-         display: inline-block;
-         background-color:#E0E0E0;   
-         right: 53%;
-         top: 37%;       
+        p:first-child::after {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          display: inline-block;
+          background-color: #e0e0e0;
+          right: 53%;
+          top: 37%;
         }
-     i{
-        margin-left: 3%;
-        display: inline-block;
-     }
-     .cardcourse_comments{
-        @include course_text(16px, 400, 49px, $card_module_info);
-        display: inline-block;
-            font-family: $font_jakarta_light;
-            margin-right: 2%;
-            margin-left: 2%
-        
-     }
-     h4{
-        @include course_text(32px, bold, 38.4px, $cardmoduletextbody);
-            font-family: 'General Sans', sans-serif;
-            margin-left: auto;
-            display: inline-block;
-            margin-left: 3%;
-        
-     }
+        i {
+          margin-left: 3%;
+          display: inline-block;
+        }
+        .cardcourse_comments {
+          @include course_text(16px, 400, 49px, $card_module_info);
+          display: inline-block;
+          font-family: $font_jakarta_light;
+          margin-right: 2%;
+          margin-left: 2%;
+        }
+        h4 {
+          @include course_text(32px, bold, 38.4px, $cardmoduletextbody);
+          font-family: "General Sans", sans-serif;
+          margin-left: auto;
+          display: inline-block;
+          margin-left: 3%;
+          position: absolute;
+          right: 0;
+          overflow-y: none;
+        }
       }
-      li:last-child{
+      li:last-child {
         display: flex;
-        label{
-            margin-right: 3%;
-            display: flex;
-            p{
-                @include course_text(14px, 400, 21.7px, $card_module_info);
-                display: inline-block;
-                    font-family: $font_jakarta_light;
-                    
-            }
-           
+        justify-content: space-between;
+        margin-top: 6%;
+        label {
+          margin-right: 3%;
+          display: flex;
+          p {
+            @include course_text(14px, 400, 21.7px, $card_module_info);
+            display: inline-block;
+            font-family: $font_jakarta_light;
+          }
         }
-       
-        
       }
-      label:last-child{
+      label:last-child {
         margin-right: 0 !important;
       }
     }

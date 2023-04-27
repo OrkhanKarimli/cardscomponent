@@ -6,11 +6,11 @@
 }
 .course_main {
   border-radius: 16px;
- 
-  .row{
+
+  .row {
     background-color: white;
     border-radius: 16px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
   }
   .course_img {
     width: 100%;
@@ -44,20 +44,19 @@
         }
       }
       li:nth-child(3) {
-       width: 100%;
-       height: 4px;
-       background: linear-gradient(to right,#32BCA3 50%,#E0E0E0 50%);
-       display: inline-block;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #32bca3 50%, #e0e0e0 50%);
+        display: inline-block;
       }
-      li:last-child{
-        p{
-            @include course_text(14px, 400, 21.7px, $card_module_info);
-            font-family: $font_jakarta_med;
+      li:last-child {
+        p {
+          @include course_text(14px, 400, 21.7px, $card_module_info);
+          font-family: $font_jakarta_med;
         }
-        label{
-            color: $card_module_info;
+        label {
+          color: $card_module_info;
         }
-        
       }
     }
   }
