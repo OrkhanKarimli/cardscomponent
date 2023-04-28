@@ -1,10 +1,10 @@
 import "./App.css";
 import "./scss/style.scss";
-import Whyus from "./components/Whyus";
+import Testimonialspage from "./components/Testimonialcard";
 
 function App() {
   return(
-<Whyus/> 
+<Testimonialspage/>
   ) 
 }
 

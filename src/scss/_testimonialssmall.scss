@@ -1,0 +1,67 @@
+@mixin test_mon_xs_text($size, $color, $family, $height, $weight) {
+  font-size: $size;
+  color: $color;
+  font-family: $family;
+  line-height: $height;
+  font-weight: $weight;
+}
+.test_mon_xs_main {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 24px !important;
+  .row {
+    .avatar {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+    .col-md-4{
+    display: flex;
+    justify-content: flex-end;
+    }
+    .col-md-6 {
+      ul {
+        list-style: none;
+        padding-left: 1rem !important;
+        li:first-child {
+          list-style: none;
+          @include textstyle();
+        }
+        li:last-child {
+          list-style: none;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: $font-jakarta-med;
+          color: #7c7c7c;
+        }
+      }
+      p {
+        @include test_mon_xs_text(
+          16px,
+          $infocolor,
+          $font-jakarta-light,
+          24px,
+          400
+        );
+      }
+    }
+
+    .col-md-12 {
+      p {
+        @include test_mon_xs_text(
+          16px,
+          $infocolor,
+          $font-jakarta-light,
+          24px,
+          400
+        );
+      }
+
+    }
+  }
+}
