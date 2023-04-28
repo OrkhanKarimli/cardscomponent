@@ -5,15 +5,12 @@ const Testimonialcard = ({
 avatarImg,
 cardContent,
 authorName,
-authorPosition
+authorPosition,
+className
 }) => {
   return (
-    <div
-      className="container"
-      style={{ backgroundColor: "#F9F9F9", padding: "2%" }}
-    >
-      <div className="row">
-        <div className="test_mon_xs_main col-md-6 d-flex">
+      
+        <div className={` ${className} test_mon_xs_main  d-flex`}>
           <div className="row">
             <div className="col-md-2 avatar">
               <img src={avatarImg}/>
@@ -36,8 +33,8 @@ authorPosition
             </div>
           </div>
         </div>
-      </div>
-    </div>
+  
+
   );
 };
 

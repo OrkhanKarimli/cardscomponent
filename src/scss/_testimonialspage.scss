@@ -1,0 +1,54 @@
+.monials_page_main{
+ padding: 100px 0px 100px 0px;
+ overflow-x: hidden;
+ .col-test-mon-left{
+  text-align: center;
+    h2{
+        font-size: 52px;
+        font-weight: bold;
+        line-height: 57.2px;
+        font-family: 'General Sans',sans-serif;
+        margin-bottom: 3%;
+    }
+
+ }
+ .col-test-mon-right{
+    position: relative;
+    .row{
+        justify-content: center;
+    }
+
+ }   
+.fixingsize{
+font-size: 14px;
+padding: 15px !important;
+margin-right: 1%;
+margin-top: 2%;
+}
+.changeposright{
+    position: absolute;
+    padding: 14px !important;
+    font-size: 15px;
+    left: 95%;
+}
+.changeposleft{
+    position: absolute;
+    padding: 14px !important;
+    font-size: 15px;
+    right: 94%;
+}
+.changeposbottomright{
+    position: absolute;
+    padding: 14px !important;
+    font-size: 15px;
+    left: 73%;
+    top: 50%;
+}
+.changeposbottomleft{
+    position: absolute;
+    padding: 14px !important;
+    font-size: 15px;
+    right: 73%;
+    top: 50%;
+}
+}

@@ -1,6 +1,6 @@
 import "./App.css";
 import "./scss/style.scss";
-import Testimonialspage from "./components/Testimonialcard";
+import Testimonialspage from "./components/Testimonialspage";
 
 function App() {
   return(
