@@ -1,10 +1,10 @@
 import "./App.css";
 import "./scss/style.scss";
-import Testimonialspage from "./components/Testimonialspage";
+import Footer from "./components/Footer";
 
 function App() {
   return(
-<Testimonialspage/>
+<Footer/>
   ) 
 }
 

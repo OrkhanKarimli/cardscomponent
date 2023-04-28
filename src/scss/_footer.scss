@@ -1,0 +1,69 @@
+@mixin footer_text_style($size,$weight,$height,$color,$family){
+    font-size: $size;
+    font-weight: $height;
+    line-height: $weight;
+    color: $color;
+    font-family: $family;
+
+}
+.footer_main{
+    background-color: $infoiconcol;
+    position: relative;
+    padding: 100px 0px 100px 0px;
+    overflow-x: hidden;
+    i{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .cta{
+        z-index: 999;
+        text-align: center;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            h1{
+               @include footer_text_style(72px,79.2px  ,bold,white ,$font-general)
+            }
+            p{
+                @include footer_text_style(20px,26px ,400 ,$landing_text_color ,$font-jakarta-light );
+                margin-top: 3%
+            }
+            button{
+                @include footer_text_style(18px,24.3px ,600 ,$infoiconcol,$font-jakarta-plus );
+                padding: 20px 40px 20px 40px;
+                background-color: $uicolor;
+                border-radius: 1000px;
+                margin-top: 5%;
+                border: none;
+                outline: none;
+            }
+           
+            
+        }
+    }
+    }
+    .logos{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin-top: 5%;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .footer_nav{
+        .col-md-3:first-child{
+            p{
+                @include footer_text_style(16px,24px ,400 ,$landing_text_color ,$font-jakarta-light);
+                margin-top: 3%;
+            }
+        }
+    }
+}
