@@ -1,10 +1,10 @@
 import "./App.css";
 import "./scss/style.scss";
-import  Aboutus  from "./components/Aboutus";
+import Whyus from "./components/Whyus";
 
 function App() {
   return(
- <Aboutus/> 
+<Whyus/> 
   ) 
 }
 
