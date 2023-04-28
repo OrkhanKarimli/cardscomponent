@@ -1,10 +1,10 @@
 import "./App.css";
 import "./scss/style.scss";
-import Authorspage from "./components/Authorspage"
+import  Aboutus  from "./components/Aboutus";
 
 function App() {
   return(
-<Authorspage/>
+ <Aboutus/> 
   ) 
 }
 
