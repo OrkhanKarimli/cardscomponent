@@ -73,7 +73,7 @@
 }
 .addbottom {
   border-bottom: 1px solid $uicolor;
-  color: $uicolor;
+  color: $uicolor !important;
 }
 .fixingicontech{
     position: absolute !important;
@@ -89,4 +89,5 @@
     position: absolute !important;
     left: 24% !important;
     top: 26% !important;
+    
 }

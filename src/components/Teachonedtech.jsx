@@ -27,16 +27,16 @@ const Teachonedtech = () => {
                   </i>
                   <p>EdTech</p>
                 </li>
-                <li  className={isActive ? "addbottom" : ""} onClick={handleClick}>
+                <li>
                   <p>Browse</p>
                   <i className="fixearrowicedtech">
                     <Caretdown />
                   </i>
                 </li>
-                <li  className={isActive ? "addbottom" : ""} onClick={handleClick}>
-                  <p>Teach on Edtech</p>
+                <li  >
+                  <p className={isActive ? "addbottom" : ""} onClick={handleClick}>Teach on Edtech</p>
                 </li>
-                <li  className={isActive ? "addbottom" : ""} onClick={handleClick}>
+                <li >
                   <p>About Us</p>
                 </li>
               </ul>
