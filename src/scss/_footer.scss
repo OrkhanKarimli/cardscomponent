@@ -9,7 +9,7 @@
 .footer_main{
     background-color: $infoiconcol;
     position: relative;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 0px 0px;
     overflow-x: hidden;
     i{
         position: absolute;
@@ -30,7 +30,7 @@
             }
             p{
                 @include footer_text_style(20px,26px ,400 ,$landing_text_color ,$font-jakarta-light );
-                margin-top: 3%
+                margin-top: 3%;
             }
             button{
                 @include footer_text_style(18px,24.3px ,600 ,$infoiconcol,$font-jakarta-plus );
@@ -59,10 +59,85 @@
         }
     }
     .footer_nav{
-        .col-md-3:first-child{
-            p{
-                @include footer_text_style(16px,24px ,400 ,$landing_text_color ,$font-jakarta-light);
-                margin-top: 3%;
+        margin-top: 6%;
+position: relative;
+display: inline-block;
+.row:after{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #7C7C7C;
+    width: 100%;
+    bottom: -15%;
+
+}
+        .col-md-5{
+            ul{
+                list-style: none;
+                padding: none;
+                margin: none;
+                li{
+                    list-style: none;
+                    p{
+                        @include footer_text_style(16px,24px ,400 ,$landing_text_color ,$font-jakarta-light);
+                        margin-top: 3%;
+                    }
+                }
+                li:first-child{
+                    div{
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../image/Edtechfooter.png);
+                        display: inline-block;
+                    }
+                  
+                p{
+                    @include footer_text_style(32px,38.4px ,800 ,$white,$font-be-vietnam);
+                   display: inline-block;
+                   margin-left: 3%;
+                }
+                }
+               
+            }
+           
+        }
+        .col-md-2{
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .footer_nav_head{
+                    @include footer_text_style(18px,24.3px ,600 ,$white,$font-jakarta-plus );
+                    margin-bottom: 3%;
+                }
+                li{
+                    list-style: none;
+                    p{
+                        @include footer_text_style(16px,24px ,400 ,$landing_text_color,$font-jakarta-plus );  
+                    }
+                }
+            }
+        }
+    }
+    .col-md-10{
+        margin-top: 6%;
+        .row{
+            justify-content: space-between;
+            .copyright{
+                p{
+                    @include footer_text_style(14px,21.7px ,400 ,$landing_text_color,$font-jakarta-plus );
+                }
+            }
+            .right-logos-footer{
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    li{
+                        list-style: none;
+                        margin-left: 18%;
+                    }
+                }
             }
         }
     }
