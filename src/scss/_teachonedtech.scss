@@ -1,0 +1,92 @@
+@mixin teach_edtech_text($size, $height, $weight, $color, $family) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+.teachonedtech_main {
+  background-color: $infoiconcol;
+  position: relative;
+  i {
+    position: absolute;
+    left: -6%;
+    top: 0;
+  }
+  .techtitle {
+    .row {
+      padding: 9% 0% 0% 9%;
+      
+      .col-md-7 {
+        z-index: 999;
+        h1 {
+          @include teach_edtech_text(
+            68px,
+            79.2px,
+            500,
+            $author_info_color,
+            "General Sans"
+          );
+        }
+      }
+      .col-md-4 {
+        p {
+          @include teach_edtech_text(
+            16px,
+            26px,
+            400,
+            $landing_text_color,
+            $font-jakarta-plus
+          );
+        }
+
+        button {
+          padding: 20px 40px 20px 40px;
+          color: white;
+          background-color: $card_module_icon_color;
+          border-radius: 1000px;
+          border: none;
+          margin-top: 4%;
+        }
+      }
+    }
+    .edtechcontentimg {
+        margin-top: 5%;
+        z-index: 999;
+      height: 340px;
+      background-image: url(../image/edtechcontentimg.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 16px 0px 0px 16px;
+    }
+    .edtechcontenttext{
+        width: 25%;
+        margin-top: 5%;
+        display: inline-block;
+        height: 340px;
+        background-color: $cardmoduletextbody;
+        border-radius: 0px 16px 16px 0px;
+        border: 1px solid $infocolor;
+    }
+  }
+}
+.addbottom {
+  border-bottom: 1px solid $uicolor;
+  color: $uicolor;
+}
+.fixingicontech{
+    position: absolute !important;
+    top: 23px !important;
+    left: 5px !important;
+}
+.fixedtechnaviconsc{
+    position: absolute !important;
+    left: 66% !important;
+    top: 28% !important;
+}
+.fixearrowicedtech{
+    position: absolute !important;
+    left: 24% !important;
+    top: 26% !important;
+}
