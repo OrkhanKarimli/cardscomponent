@@ -15,8 +15,8 @@
   }
   .techtitle {
     .row {
-      padding: 9% 0% 0% 9%;
-      
+      padding: 9% 0% 5% 8%;
+
       .col-md-7 {
         z-index: 999;
         h1 {
@@ -51,8 +51,8 @@
       }
     }
     .edtechcontentimg {
-        margin-top: 5%;
-        z-index: 999;
+      margin-top: 5%;
+      z-index: 999;
       height: 340px;
       background-image: url(../image/edtechcontentimg.png);
       background-position: center;
@@ -60,14 +60,59 @@
       background-repeat: no-repeat;
       border-radius: 16px 0px 0px 16px;
     }
-    .edtechcontenttext{
-        width: 25%;
-        margin-top: 5%;
-        display: inline-block;
-        height: 340px;
-        background-color: $cardmoduletextbody;
-        border-radius: 0px 16px 16px 0px;
-        border: 1px solid $infocolor;
+    .edtechcontenttext {
+      width: 25%;
+      margin-top: 5%;
+      display: inline-block;
+      height: 340px;
+      background-color: $cardmoduletextbody;
+      border-radius: 0px 16px 16px 0px;
+      border: 1px solid $infocolor;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          position: relative;
+          p {
+            @include teach_edtech_text(
+              16px,
+              24px,
+              500,
+              $author_info_color,
+              $font-jakarta-plus
+            );
+          }
+          h1{
+            @include teach_edtech_text(
+              56px,
+              67.2px,
+              500,
+              $author_info_color,
+              'General Sans'
+            );
+            display: inline-block;
+          }
+        }
+
+.edtechpercent{
+  color: $card_module_icon_color;
+  display: inline-block;
+  position: absolute;
+  right: 1%;
+}
+
+      }
+      .edtechborder{
+        display: block;
+        width: 98%;
+        height: 2px;
+        background-color: $card_module_info;
+        margin-bottom: 7%;
+        margin-top: 11%;
+      }
+      
     }
   }
 }
@@ -75,19 +120,18 @@
   border-bottom: 1px solid $uicolor;
   color: $uicolor !important;
 }
-.fixingicontech{
-    position: absolute !important;
-    top: 23px !important;
-    left: 5px !important;
+.fixingicontech {
+  position: absolute !important;
+  top: 23px !important;
+  left: 5px !important;
 }
-.fixedtechnaviconsc{
-    position: absolute !important;
-    left: 66% !important;
-    top: 28% !important;
+.fixedtechnaviconsc {
+  position: absolute !important;
+  left: 66% !important;
+  top: 28% !important;
 }
-.fixearrowicedtech{
-    position: absolute !important;
-    left: 24% !important;
-    top: 26% !important;
-    
+.fixearrowicedtech {
+  position: absolute !important;
+  left: 24% !important;
+  top: 26% !important;
 }
