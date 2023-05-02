@@ -1,0 +1,40 @@
+@mixin compaines_small_text($size, $height, $weight, $color, $family) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+.companies_small_main {
+    overflow: hidden;
+  height: 210px;
+  background-color: $infoiconcol;
+  position: relative;
+  padding-left: 1% !important;
+  display: flex;
+  i {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  ul {
+    align-items: center !important;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      z-index: 999;
+      list-style: none;
+      h5 {
+        @include compaines_small_text(
+          23px,
+          28.8px,
+          500,
+          $author_info_color,
+          $font-general
+        );
+      }
+    }
+  }
+}
