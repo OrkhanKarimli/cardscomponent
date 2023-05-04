@@ -4,7 +4,7 @@ import courseimg from "../image/courseimage.png";
 import courseimg1 from "../image/coursesprogress1.png";
 import courseimg2 from "../image/popularcourses.png";
 import Coursecard from "./Coursecard";
-const Popularcourses = () => {
+const PopularCourses = () => {
   return (
     <div className="container-fluid popular-main">
       <div className="row">
@@ -72,4 +72,4 @@ const Popularcourses = () => {
   );
 };
 
-export default Popularcourses;
+export default PopularCourses;

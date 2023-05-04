@@ -6,7 +6,7 @@ import { ReactComponent as Caretdown } from "../icons/CaretDown.svg";
 import { ReactComponent as Logoicon } from "../icons/Logo.svg";
 import { ReactComponent as Patern } from "../icons/Patern.svg";
 
-const Landingpage = () => {
+const LandingPage = () => {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
@@ -106,4 +106,4 @@ const Landingpage = () => {
   );
 };
 
-export default Landingpage;
+export default LandingPage;

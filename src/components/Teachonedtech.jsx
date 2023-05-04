@@ -6,14 +6,14 @@ import { ReactComponent as Pattern } from "../icons/Patern.svg";
 import {ReactComponent as Arrowline} from "../icons/ArrowLineUpRight.svg"
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-const Teachonedtech = () => {
+const TeachOnedTech = () => {
   const [isActive, setActive] = useState(false);
 
   const handleClick = (e) => {
     setActive(!isActive);
   };
   return (
-    <div className="container-fluid teachonedtech_main">
+    <div className="container-fluid TeachOnedTech_main">
       <i>
         <Pattern />
       </i>
@@ -136,4 +136,4 @@ const Teachonedtech = () => {
   );
 };
 
-export default Teachonedtech;
+export default TeachOnedTech;

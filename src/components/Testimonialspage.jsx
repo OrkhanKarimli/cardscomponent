@@ -7,7 +7,7 @@ import Authorimg2 from "../image/testmon2.png";
 import Authorimg3 from "../image/testmon3.png";
 import Authorimg4 from "../image/testmon4.png";
 
-const Testimonialspage = () => {
+const TestimonialsPage = () => {
   return (
     <div className="container-fluid monials_page_main">
       <div className="col-md-12 col-test-mon-left">
@@ -28,4 +28,4 @@ const Testimonialspage = () => {
   );
 };
 
-export default Testimonialspage;
+export default TestimonialsPage;

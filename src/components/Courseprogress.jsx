@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-export const Courseprogress = ({
+export const CourseProgress = ({
   cardTitle,
   authorName,
   percent
@@ -34,4 +34,4 @@ export const Courseprogress = ({
   );
 };
 
-export default Courseprogress;
+export default CourseProgress;

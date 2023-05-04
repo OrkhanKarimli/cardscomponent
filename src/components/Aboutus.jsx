@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css";
- const Aboutus = () => {
+ const AboutUs = () => {
   return (
    <div className="container-fluid aboutus_main">
     <div className="row">
@@ -60,4 +60,4 @@ import "bootstrap/dist/css/bootstrap.css";
   )
 }
 
-export default Aboutus;
+export default AboutUs;

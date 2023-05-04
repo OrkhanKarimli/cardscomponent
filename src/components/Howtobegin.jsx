@@ -1,7 +1,7 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css";
-import Acardion from "../components/Acardion"
-const Howtobegin = () => {
+import Acardion from "./Accordion"
+const HowToBegin = () => {
   return (
     <div className="container-fluid howto_begin_main">
         <div className="row">
@@ -44,4 +44,4 @@ const Howtobegin = () => {
   )
 }
 
-export default Howtobegin
+export default HowToBegin

@@ -15,7 +15,7 @@ import authorimg4 from "../image/authorimg4.png";
 import authorimg5 from "../image/authorimg5.png";
 import authorimg6 from "../image/authorimg6.png";
 
-const Authorspage = () => {
+const AuthorsPage = () => {
   return (
     <div className="container-fluid authors_page_main">
       <i>
@@ -106,4 +106,4 @@ const Authorspage = () => {
     </div>
   );
 };
-export default Authorspage;
+export default AuthorsPage;

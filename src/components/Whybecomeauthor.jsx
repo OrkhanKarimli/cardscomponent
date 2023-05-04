@@ -4,7 +4,7 @@ import {ReactComponent as Student} from "../icons/Student.svg";
 import {ReactComponent as Money} from "../icons/Money.svg"
 import {ReactComponent as Chalk} from "../icons/ChalkboardTeacher.svg"
 
-const Whybecomeauthor = () => {
+const WhyBecomeAuthor = () => {
   return (
 <div className="container-fluid becomeauthor_main">
 <div className="row">
@@ -44,4 +44,4 @@ const Whybecomeauthor = () => {
   )
 }
 
-export default Whybecomeauthor
+export default WhyBecomeAuthor

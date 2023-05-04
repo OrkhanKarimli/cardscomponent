@@ -18,7 +18,7 @@ const data = [
       "You begin with your enthusiasm and knowledge. Then, using our Marketplace Insights tool, select a promising topic. It is entirely up to you how you teach and what you bring to the table. We provide a wealth of materials for developing your first course. In addition, our teacher dashboard and curriculum pages help you stay organized.",
   },
 ];
-const Acardion = () => {
+const Accordion = () => {
   const [isActive, setActive] = useState(null);
 
   const toggle = (i) => {
@@ -45,4 +45,4 @@ const Acardion = () => {
   );
 };
 
-export default Acardion;
+export default Accordion;

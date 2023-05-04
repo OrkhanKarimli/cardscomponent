@@ -5,7 +5,7 @@ import { ReactComponent as Icon1 } from "../icons/1.svg";
 import { ReactComponent as Icon2 } from "../icons/2.svg";
 import { ReactComponent as Icon3 } from "../icons/3.svg";
 import { ReactComponent as Icon4 } from "../icons/4.svg";
-const Companiesmall = () => {
+const CompanieSmall = () => {
   return (
     <div className="container-fluid companies_small_main">
       <i>
@@ -32,4 +32,4 @@ const Companiesmall = () => {
   );
 };
 
-export default Companiesmall;
+export default CompanieSmall;

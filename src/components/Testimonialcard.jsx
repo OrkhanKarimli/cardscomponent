@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Quote } from "../icons/Quote.svg";
-const Testimonialcard = ({
+const TestimonialCard = ({
 avatarImg,
 cardContent,
 authorName,
@@ -38,4 +38,4 @@ className
   );
 };
 
-export default Testimonialcard;
+export default TestimonialCard;

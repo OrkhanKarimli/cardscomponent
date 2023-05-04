@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Chats } from "../icons/Chats.svg";
 import { ReactComponent as Calendar } from "../icons/Calendar.svg";
 import { ReactComponent as Document } from "../icons/Document.svg";
-const Whyus = () => {
+const WhyUs = () => {
   return (
     <div className="container-fluid whyus_main">
       <div className="row">
@@ -63,4 +63,4 @@ const Whyus = () => {
   );
 };
 
-export default Whyus;
+export default WhyUs;

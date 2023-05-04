@@ -5,7 +5,7 @@ import {ReactComponent as Icon2} from "../icons/2.svg";
 import {ReactComponent as Icon3} from "../icons/3.svg";
 import {ReactComponent as Icon4} from "../icons/4.svg";
 import {ReactComponent as Icon5} from "../icons/5.svg"
-const Socialproof = () => {
+const SocialProof = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -39,4 +39,4 @@ const Socialproof = () => {
   );
 };
 
-export default Socialproof;
+export default SocialProof;
