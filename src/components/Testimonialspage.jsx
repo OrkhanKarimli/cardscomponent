@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import Testimonialcard from "./Testimonialcard";
 import Authorimg from "../image/Avatarimg.png";
 import Authorimg1 from "../image/testmon1.png";

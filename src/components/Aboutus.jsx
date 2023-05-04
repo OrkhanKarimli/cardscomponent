@@ -1,5 +1,4 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.css";
  const AboutUs = () => {
   return (
    <div className="container-fluid aboutus_main">

@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBrain, faClock, faSignal } from "@fortawesome/free-solid-svg-icons";
 const Challenge = () => {

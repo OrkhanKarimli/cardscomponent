@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Howtobegin from "./components/HowToBegin";
+import  Carousel from "./components/Carousel";
 function App() {
   return(
-<Howtobegin/>
+<Carousel/>
 
   ) 
 }

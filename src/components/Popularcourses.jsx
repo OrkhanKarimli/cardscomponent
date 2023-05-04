@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import courseimg from "../image/courseimage.png";
 import courseimg1 from "../image/coursesprogress1.png";
 import courseimg2 from "../image/popularcourses.png";

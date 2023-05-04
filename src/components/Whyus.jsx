@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Chats } from "../icons/Chats.svg";
 import { ReactComponent as Calendar } from "../icons/Calendar.svg";
 import { ReactComponent as Document } from "../icons/Document.svg";

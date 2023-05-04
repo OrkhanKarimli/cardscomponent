@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as CalendarsvgIcon } from "../icons/CalendarBlank.svg";
 const Eventscard = () => {
   return (

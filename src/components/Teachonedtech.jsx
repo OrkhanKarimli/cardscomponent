@@ -5,7 +5,6 @@ import { ReactComponent as Logoicon } from "../icons/Logo.svg";
 import { ReactComponent as Pattern } from "../icons/Patern.svg";
 import {ReactComponent as Arrowline} from "../icons/ArrowLineUpRight.svg"
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 const TeachOnedTech = () => {
   const [isActive, setActive] = useState(false);
 

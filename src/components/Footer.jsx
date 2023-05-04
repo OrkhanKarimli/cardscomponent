@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Footerpattern } from "../icons/Paternfooter.svg";
 import { ReactComponent as Facebook } from "../icons/FacebookLogo.svg";
 import { ReactComponent as Twitter } from "../icons/TwitterLogo.svg";

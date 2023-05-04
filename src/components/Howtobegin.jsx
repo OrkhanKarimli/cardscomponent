@@ -1,5 +1,5 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.css";
+
 import Acardion from "./Accordion"
 const HowToBegin = () => {
   return (

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-import "bootstrap/dist/css/bootstrap.css";
 const data = [
   {
     title: "Plan Your Curriculum",

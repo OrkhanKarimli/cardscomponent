@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import {ReactComponent as Icon1} from "../icons/1.svg";
 import {ReactComponent as Icon2} from "../icons/2.svg";
 import {ReactComponent as Icon3} from "../icons/3.svg";

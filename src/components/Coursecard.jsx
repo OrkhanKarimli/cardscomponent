@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 
 import { ReactComponent as Staricon } from "../icons/Star.svg";
 import { ReactComponent as Clockicon } from "../icons/Clock.svg";

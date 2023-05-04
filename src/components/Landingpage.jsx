@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Donwarrow } from "../icons/Icon.svg";
 import { ReactComponent as Searchicon } from "../icons/Search.svg";
 import { ReactComponent as Caretdown } from "../icons/CaretDown.svg";

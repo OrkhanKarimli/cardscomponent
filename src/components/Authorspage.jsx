@@ -1,6 +1,5 @@
 import React from "react";
 import Author from "./Author";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Pattern2 } from "../icons/Patern2.svg";
 import { ReactComponent as Cpu } from "../icons/Cpu.svg";
 import { ReactComponent as Gitfork } from "../icons/GitFork.svg";

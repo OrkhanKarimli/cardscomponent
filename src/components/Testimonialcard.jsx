@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import { ReactComponent as Quote } from "../icons/Quote.svg";
 const TestimonialCard = ({
 avatarImg,

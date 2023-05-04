@@ -1,0 +1,50 @@
+@mixin custom_carousel_text($size,$weight,$height,$family,$color){
+font-size: $size;
+font-weight: $weight;
+line-height: $height;
+font-family: $family;
+color: $color;
+}
+.restyle-carousel-item{
+    text-align: center;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            .re-carousel-item{
+                width: 48px;
+                height: 48px;
+                display: inline-block;
+                border-radius: 1000px;
+            }
+            .re-carousel-name{
+                p{
+                    @include custom_carousel_text(16px,500 ,24px ,$font-jakarta-plus ,$cardmoduletextbody )
+                }
+            }
+            .re-carousel-text{
+                p{
+                    @include custom_carousel_text(14px,400 ,21.7px ,$font-jakarta-plus ,$card_module_info )
+                }
+            }
+        }
+    }
+    
+}
+.custom-slider-main{
+    position: relative;
+ .custom-button-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+ }   
+ .custom-button-prev{
+    position: absolute;
+    left:0;
+    top: 50%;
+    cursor: pointer;
+ }
+}

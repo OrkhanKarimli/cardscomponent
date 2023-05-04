@@ -1,5 +1,4 @@
 import React from 'react'
-import "bootstrap/dist/css/bootstrap.css";
 import {ReactComponent as Student} from "../icons/Student.svg";
 import {ReactComponent as Money} from "../icons/Money.svg"
 import {ReactComponent as Chalk} from "../icons/ChalkboardTeacher.svg"

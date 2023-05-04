@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 export const Author = ({
   imgSrc,
   authorName,
