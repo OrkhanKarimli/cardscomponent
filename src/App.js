@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Acardion from "./components/Acardion";
+import Howtobegin from "./components/Howtobegin";
 function App() {
   return(
-<Acardion/>
+<Howtobegin/>
 
   ) 
 }
