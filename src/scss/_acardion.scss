@@ -1,0 +1,39 @@
+@mixin acardion_text($size,$weight,$height,$family,$color){
+font-size: $size;
+font-weight: $weight;
+line-height: $height;
+font-family: $family;
+color: $color;
+}
+.acardion{
+    .item{
+        .title{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 26px;
+                color: $infoiconcol;
+                transition: 1s ease-in-out;
+            }
+            h5{
+                @include acardion_text(24px,500 ,28.8px ,$cardmoduletextbody ,$font-general)
+            }
+        }
+        .content{
+            display: none;
+            p{
+                @include acardion_text(16px,400 ,24px ,$font-jakarta-plus ,$card_module_info )
+            }
+        }
+
+        border-bottom: 1px solid #E4E4E4FF;
+        margin-bottom: 3%;
+    }
+  .show{
+    display: block !important;
+    transition: 0.5s ease-in-out;
+  }
+    
+   
+}

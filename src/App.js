@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import Companiesmall from "./components/Companiesmall";
+import Acardion from "./components/Acardion";
 function App() {
   return(
-<Companiesmall/>
+<Acardion/>
 
   ) 
 }
