@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import  Carousel from "./components/Carousel";
+import TestimonialsAuthor from "./components/TestimonialsAuthor";
 function App() {
   return(
-<Carousel/>
+<TestimonialsAuthor/>
 
   ) 
 }

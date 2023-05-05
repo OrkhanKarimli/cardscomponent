@@ -1,0 +1,38 @@
+@mixin testimonials_author_text($size, $weight, $height, $color,$family) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+    font-family: $family;
+  }
+.testimonials-author-main{
+    padding: 100px 124px 100px 124px !important;
+    text-align: center;
+    .testimonials-header{
+        h2{
+            @include testimonials_author_text(52px,bold ,57.2px ,$cardmoduletextbody ,$font-general );
+            margin-bottom: 5%;
+           
+        }
+  
+    }
+    .testimonilas-author-quote{
+        p{
+            @include testimonials_author_text(16px,500 ,26px ,$cardmoduletextbody ,$font-jakarta-plus );
+            margin-bottom: 8%;
+        }
+      
+    }
+    .testimonials-author-logos{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            li{
+                list-style: none;
+            }
+        }
+        margin-top: 8%;
+    }
+}

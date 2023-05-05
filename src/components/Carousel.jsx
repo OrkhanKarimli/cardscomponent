@@ -10,9 +10,9 @@ import { SwiperNavButtons } from "./SwiperNavButtons";
 const Carousel = () => {
 
   return (
-    <div className="container">
-      <div className="row justify-center">
-        <div className="col-md-6 custom-slider-main">
+   
+     
+        <div className="col-md-12 custom-slider-main">
           <Swiper
           
             modules={[Navigation,Pagination,A11y]}
@@ -74,8 +74,6 @@ const Carousel = () => {
           </Swiper>
 
         </div>
-      </div>
-    </div>
   );
 };
 
