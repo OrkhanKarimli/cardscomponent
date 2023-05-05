@@ -1,23 +1,21 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import Carouselimg from "../image/carousel.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useSwiper } from "swiper/react";
-import { Navigation } from "swiper";
+
+import { Navigation, Pagination,A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import { ReactComponent as Iconnext } from "../icons/ArrowRight.svg";
-import { ReactComponent as Iconprev } from "../icons/ArrowLeft.svg";
+import { SwiperNavButtons } from "./SwiperNavButtons";
+
 const Carousel = () => {
-  const swiper = useSwiper();
+
   return (
     <div className="container">
       <div className="row justify-center">
         <div className="col-md-6 custom-slider-main">
           <Swiper
-            navigation={true}
-            modules={[Navigation]}
-            className="mySwiper"
+          
+            modules={[Navigation,Pagination,A11y]}
             slidesPerView="auto"
           >
             <SwiperSlide className="restyle-carousel-item">
@@ -72,13 +70,9 @@ const Carousel = () => {
                 </li>
               </ul>
             </SwiperSlide>
+            <SwiperNavButtons/>
           </Swiper>
-          <div className="custom-button-next ">
-            <Iconnext onClick={() => swiper.slideNext()} />
-          </div>
-          <div className="custom-button-prev">
-            <Iconprev onClick={() =>swiper.slidePrev()} />
-          </div>
+
         </div>
       </div>
     </div>
