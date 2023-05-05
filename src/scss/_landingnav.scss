@@ -1,0 +1,83 @@
+.landingnav {
+    position: absolute;
+    z-index: 999;
+    padding: 24px;
+    background-color: transparent;
+    .row{
+      align-items: baseline;
+      justify-content: space-between;.col-md-7 {
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+          list-style: none;
+          margin-right: 9%;
+        }
+        li:first-child {
+          display: flex;
+          i {
+            margin-right: 2%;
+          }
+          p {
+            @include landing_text(24px, 700, #ffffff, 36px);
+            font-family: $font-be-vietnam;
+          }
+        }
+        li:nth-child(2) {
+          display: flex;
+          p {
+            @include landing_text(16px, 500, $author_info_color, 24px);
+            font-family: $font-jakarta-med;
+          }
+        }
+        li:nth-child(3) {
+          p {
+            @include landing_text(16px, 500, $author_info_color, 24px);
+            font-family: $font-jakarta-med;
+          }
+        }
+        li:last-child {
+          p {
+            @include landing_text(16px, 500, $author_info_color, 24px);
+            font-family: $font-jakarta-med;
+          }
+        }
+      }
+    }
+    .col-md-4 {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          list-style: none;
+          i{
+            margin-right: 3%;
+          }
+          button:first-child{
+            @include landing_text(16px,600 ,$card_module_icon_color ,24px );
+            padding: 16px 32px 16px 32px;
+            background-color: transparent;
+            border: 1px solid $card_module_icon_color;
+            border-radius: 1000px;
+          }
+      
+        }
+        li:last-child{
+          button{
+            @include landing_text(16px,600 ,white ,24px );
+            padding: 16px 32px 16px 32px;
+            background-color: $card_module_icon_color;
+            border: none;
+            border-radius: 1000px;
+          }
+        }
+      }
+    }
+    }
+    
+  }

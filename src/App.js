@@ -1,6 +1,6 @@
 import "./App.css";
 import "./scss/style.scss";
-import TestimonialsAuthor from "./components/TestimonialsAuthor";
+import TestimonialsAuthor from "./components/LandingPage";
 function App() {
   return(
 <TestimonialsAuthor/>
