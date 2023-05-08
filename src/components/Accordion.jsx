@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Collapse from "@mui/material/Collapse";
 const data = [
   {
     title: "Plan Your Curriculum",
@@ -34,9 +35,9 @@ const Accordion = () => {
             <h5>{item.title}</h5>
             <span>{isActive == i ? "-" : "+"}</span>
           </div>
-            <div className={isActive == i ? "content show" : "content"}>
+            <Collapse in={isActive == i ? true:false}>
               <p>{item.content}</p>
-            </div>
+            </Collapse>
         </div>
       ))}
     </div>

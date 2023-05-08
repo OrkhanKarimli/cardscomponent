@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import TestimonialsAuthor from "./components/LandingPage";
+import LandingBrowse from "./components/Accordion";
 function App() {
   return(
-<TestimonialsAuthor/>
+<LandingBrowse/>
 
   ) 
 }

@@ -79,5 +79,8 @@
       }
     }
     }
-    
+    .menustyle{
+      color: $card_module_icon_color !important;
+      border-bottom: 1px solid $card_module_icon_color;
+    }
   }
