@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import LandingBrowse from "./components/LandingBrowse";
+import LandingPageCourses from "./components/LandingPageCourses";
 function App() {
   return(
-<LandingBrowse/>
+<LandingPageCourses/>
 
   ) 
 }
