@@ -1,0 +1,82 @@
+.landing-page-categories{
+    .landing-courses-list {
+        margin-top: 5%;
+    padding: 0;
+    margin-bottom: 10%;
+    .landing-toggle-group {
+        cursor: pointer;
+        user-select: none;
+      display: inline-block;
+      margin-left: 2%;
+      h5{
+        margin-left: 4%;
+      }
+    }
+    position: relative;
+    list-style: none;
+    .landing-browse-icon {
+      position: absolute;
+      top: 0;
+      right: -10px;
+    }
+    position: relative;
+    list-style: none;
+    input {
+      display: inline-block;
+      cursor: pointer;
+      z-index: 999;
+      position: relative;
+      opacity: 0;
+    }
+    .customcheck {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+
+      border: 2px solid #e0e0e0ff;
+      border-radius: 3px;
+      left: 0px;
+      top: 5px;
+      position: absolute;
+      cursor: pointer;
+    }
+    input:checked ~ .customcheck {
+      background-color: $card_module_icon_color;
+      border: none;
+    }
+    .customcheck:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    input:checked ~ .customcheck:after {
+      display: block;
+    }
+    .customcheck:after {
+      left: 6px;
+      top: 3px;
+      width: 4px;
+      height: 7px;
+      border: solid white;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+    }
+    .toggle-content{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.15s ease-in-out;
+    }
+    .toggled{
+        max-height: 500px;
+        transition: max-height 0.25s ease-in-out;
+    }
+  }
+  .resetelements{
+    cursor: pointer;
+    user-select: none;
+    p{
+        display: inline-block;
+
+    }
+  }
+}

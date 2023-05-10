@@ -1,39 +1,41 @@
 [{
+    "id":1,
     "head" : "Categories",
     "pages" :[
-        {"id": "1", "pagename" : "UI/UX Design (160)"},
-        {"id": "2", "pagename" : "Graphic Design (94)"},
-        {"id": "3", "pagename" : "3D & Animation (21)"},
-        {"id": "4", "pagename" : "Game Design (20)"},
-        {"id": "1", "pagename" : "Front-End (43)"},
-        {"id": "2", "pagename" : "Back-End (72)"},
-        {"id": "3", "pagename" : "Data Science (65)"},
-        {"id": "4", "pagename" : "IOT (65)"}
+        {"pagename" : "UI/UX Design (160)"},
+        { "pagename" : "Graphic Design (94)"},
+        { "pagename" : "3D & Animation (21)"},
+        { "pagename" : "Game Design (20)"},
+        { "pagename" : "Front-End (43)"},
+        { "pagename" : "Back-End (72)"},
+        { "pagename" : "Data Science (65)"},
+        { "pagename" : "IOT (65)"}
     ]
 },
-{
+{"id":2,
     "head" : "Course Duration",
     "pages" :[
-        {"id": "1", "pagename" : "Under 2 Hours (24)"},
-        {"id": "2", "pagename" : "2-10 Hours (16)"},
-        {"id": "3", "pagename" : "11-20 Hours (40)"},
-        {"id": "4", "pagename" : "20+ Hours (20)"}
+        { "pagename" : "Under 2 Hours (24)"},
+        { "pagename" : "2-10 Hours (16)"},
+        { "pagename" : "11-20 Hours (40)"},
+        { "pagename" : "20+ Hours (20)"}
     ]
 }
-,{
+,{"id":3,
     "head" : "Level",
     "pages" :[
-        {"id": "1", "pagename" : "Beginer (20)"},
-        {"id": "2", "pagename" : "Intermediate (43)"},
-        {"id": "3", "pagename" : "Expert (30)"}
+        { "pagename" : "Beginer (20)"},
+        { "pagename" : "Intermediate (43)"},
+        { "pagename" : "Expert (30)"}
     ]
 },
 {
+    "id":4,
     "head" : "Price",
     "pages" :[
-        {"id": "1", "pagename" : "Beginer (20)"},
-        {"id": "2", "pagename" : "Intermediate (43)"},
-        {"id": "3", "pagename" : "Expert (30)"}
+        { "pagename" : "Beginer (20)"},
+        { "pagename" : "Intermediate (43)"},
+        { "pagename" : "Expert (30)"}
     ]
 }
 
