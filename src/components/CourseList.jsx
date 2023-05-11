@@ -1,5 +1,4 @@
 import React from "react";
-import courseimg1 from "../image/image 118.png";
 import { ReactComponent as Star } from "../icons/Star.svg";
 import { ReactComponent as Clock } from "../icons/Clock.svg";
 import { ReactComponent as Stack } from "../icons/Stack.svg";
@@ -9,9 +8,7 @@ const CourseList = ({
     cardimg
 }) => {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-9 course-list-main">
+        <div className="col-md-12 course-list-main">
           <ul>
             <li className="course-list-img">
               <img src={cardimg} alt="" />
@@ -55,8 +52,7 @@ const CourseList = ({
                $128
               </h4>
         </div>
-      </div>
-    </div>
+
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ReactComponent as Arrowclockwise } from "../icons/ArrowClockwise.svg";
 const MultipleAccordion = ({ items, open, className }) => {
   const [acardionItem, setAcardionitem] = useState(null);
   useEffect(() => {
@@ -27,6 +28,7 @@ const MultipleAccordion = ({ items, open, className }) => {
       }),
     ]);
   }
+
   return (
     <div className="landing-page-categories">
       {acardionItem?.map((listItem, key) => {
@@ -58,6 +60,7 @@ const MultipleAccordion = ({ items, open, className }) => {
           </>
         );
       })}
+      <span className="landing-browse-line"></span>
     </div>
   );
 };

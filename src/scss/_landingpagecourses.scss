@@ -1,11 +1,59 @@
 .landing-page-courses-main {
   padding: 100px 124px 100px 124px !important;
- 
-  .landing-browse-line{
+
+  .landing-browse-line {
     width: 107%;
     height: 2px;
     display: inline-block;
     background-color: $landing_text_color;
     margin-bottom: 4%;
   }
+  .course-list-right {
+    padding-left: 5% !important;
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      font-family: $font-general;
+      font-weight: bold;
+      color: $cardmoduletextbody;
+      padding-left: 4%;
+      margin-top: 2%;
+      margin-bottom: 4%;
+    }
+    .landing-courses-tabs {
+
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        li {
+          list-style: none;
+          margin-right: 9%;
+          p {
+            color: $popularcoursestext;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            font-family: $font-jakarta-plus;
+          }
+        }
+      }
+    }
+  }
+}
+.menustyle {
+  P {
+    color: $card_module_icon_color !important;
+  }
+
+  position: relative;
+}
+.menustyle:after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  height: 3px;
+  display: inline-block;
+  background-color: $card_module_icon_color;
 }
