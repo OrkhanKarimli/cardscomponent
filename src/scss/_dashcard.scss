@@ -1,0 +1,44 @@
+.dash-card-main{
+    padding: 24px;
+    background-color: $cardmoduletextbody;
+    border-radius: 16px;
+    width: 263px !important;
+    margin-top: 3% !important;
+    margin-right: 2% !important;
+    height: 109px;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        .dash-icon{
+            width: 56px;
+            height: 56px;
+            background-color: #FFF4DF;
+            align-items: center;
+            margin-right: 2%;
+            border-radius: 8px;
+            position: relative;
+            i{
+                position: absolute;
+                top: 23%;
+                left: 22%;
+            }
+        }
+        h5{
+            font-family: $font-general;
+            color: white;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 28.8px;
+        }
+        p{
+            font-family: $font-jakarta-light;
+            color: $landing_text_color;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+}
