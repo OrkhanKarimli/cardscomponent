@@ -28,7 +28,7 @@ const LearnerDash = ({ learnerClass }) => {
     setActive(e);
   };
   return (
-    <div className={`learnerdash ${learnerClass} col-md-12`}>
+    <div className={`learnerdash ${learnerClass}`}>
     <div className="row">
       <div className="col-md-7">
         <ul>

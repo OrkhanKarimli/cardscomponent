@@ -1,0 +1,65 @@
+@mixin text_style($size, $height, $weight, $color, $family) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+.giovani-main {
+  padding: 56px 80px 56px 80px !important;
+  background-color: $infoiconcol;
+  .greeting {
+    margin-top: 8%;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li:first-child {
+        list-style: none;
+        h3 {
+          @include text_style(
+            40px,
+            48px,
+            500,
+            $author_info_color,
+            $font-general
+          );
+        }
+        p {
+          @include text_style(
+            20px,
+            26px,
+            400,
+            $author_info_color,
+            $font-jakarta-plus
+          );
+        }
+      }
+      li:last-child {
+        list-style: none;
+        button {
+          padding: 8px 32px 0px 32px;
+          border: 1px solid $card_module_icon_color;
+          background-color: transparent;
+          border-radius: 100px;
+          display: flex;
+
+          p {
+            @include text_style(
+              16px,
+              24px,
+              600,
+              $card_module_icon_color,
+              $font-jakarta-plus
+            );
+            margin-left: 6%;
+            margin-right: 6%;
+          }
+        }
+      }
+    }
+  }
+}
