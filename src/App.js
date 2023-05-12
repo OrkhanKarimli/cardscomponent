@@ -1,6 +1,6 @@
 import "./App.css";
 import "./scss/style.scss";
-import LandingPageCourses from "./components/LandingPageCourses";
+import LandingPageCourses from "./components/LearnerDash";
 function App() {
   return(
 <LandingPageCourses/>
