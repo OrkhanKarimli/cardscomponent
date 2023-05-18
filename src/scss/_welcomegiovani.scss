@@ -8,6 +8,130 @@
 .giovani-main {
   padding: 56px 80px 56px 80px !important;
   background-color: $infoiconcol;
+  .giovani-col-left {
+    border-right: 2px solid #515151FF;
+    margin-top: 7%;
+    .row {
+      .col-md-12 {
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          li:nth-child(2) {
+            margin-left: 36%;
+            margin-right: 6%;
+            position: relative;
+          }
+          li:last-child {
+            position: relative;
+          }
+          li {
+            list-style: none;
+            h4 {
+              @include text_style(
+                32px,
+                38.4px,
+                500,
+                $author_info_color,
+                $font-general
+              );
+            }
+            p {
+              @include text_style(
+                16px,
+                24px,
+                400,
+                $author_info_color,
+                $font-jakarta-plus
+              );
+              display: inline-block;
+            }
+            .indcatro-left {
+              position: relative;
+            }
+            .indicator-left::before {
+              content: "";
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              border: 4px solid $card_module_icon_color;
+              position: absolute;
+              top: 4px;
+              right: 75px;
+            }
+            .indcatro-right {
+              position: relative;
+            }
+            .indicator-right::before {
+              content: "";
+              width: 16px;
+              height: 16px;
+              border-radius: 100%;
+              right: 83px;
+              top: 4px;
+              border: 4px solid $indicatorcolor;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+    .welcome-statistic {
+      width: 100%;
+      height: 66vh;
+      background-image: url(../image/Statistic.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .welcome-statistic-numbers {
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          position: relative;
+          h4 {
+            @include text_style(
+              32px,
+              38px,
+              500,
+              $author_info_color,
+              $font-general
+            );
+
+          }
+          span {
+            top: 26%;
+            left: 33%;
+            display: flex;
+            position: absolute;
+          p {
+              color: red;
+              @include text_style(
+                14px,
+                21.7px,
+                600,
+                $card_module_icon_color,
+                $font-jakarta-plus
+              );
+            }
+          }
+          p{
+            @include text_style(
+              11px,
+              21.7px,
+              400,
+              $landing_text_color,
+              $font-jakarta-plus
+            );
+          }
+          .statistic-text-danger{
+            color: $statistic-text-danger;
+          }
+        }
+      }
+    }
+  }
   .greeting {
     margin-top: 8%;
     ul {
@@ -62,13 +186,27 @@
       }
     }
   }
+  .giovani-col-right{
+    margin-top: 7%;
+    padding-left: 3%;
+    h4{
+      margin-bottom: 7%;
+      @include text_style(
+        32px,
+        38.4px,
+        bold,
+        $author_info_color,
+        $font-general
+      );
+    }
+  }
 }
-.color2{
-background-color: #D6F2ED !important;
+.color2 {
+  background-color: #d6f2ed !important;
 }
-.color3{
-background-color: #D4EDFF !important;
+.color3 {
+  background-color: #d4edff !important;
 }
-.color4{
-background-color: #FFE0DC !important;
+.color4 {
+  background-color: #ffe0dc !important;
 }
