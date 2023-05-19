@@ -1,13 +1,15 @@
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTable } from "@fortawesome/free-solid-svg-icons";
-const Category = () => {
+const Category = ({
+  icon,
+  title
+}) => {
   return (
     <div className='category_main'>
-    <i><FontAwesomeIcon className="icon" icon={faTable} />
+    <i>
+      {icon}
         </i> 
      <p>
-     UI/UX Design
+     {title}
      </p>
     </div>
   )

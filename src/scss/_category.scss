@@ -1,10 +1,11 @@
 .category_main{
-    width: 296px;
+    width: 266px;
     height: 80px;
     border-radius: 16px;
     display: inline-block;
-    padding: 24px;
+    padding: 17px;
     background-color: $cardmoduletextbody;
+    border: 1px solid $dashcolor;;
     i{
         color: white;
         font-size: 24px;

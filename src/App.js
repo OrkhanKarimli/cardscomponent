@@ -1,9 +1,9 @@
 import "./App.css";
 import "./scss/style.scss";
-import LandingPageCourses from "./components/UpcomingAgenda";
+import LearnerSearchCategories from "./components/LearnerSearchCategories";
 function App() {
   return(
-<LandingPageCourses/>
+<LearnerSearchCategories/>
 
   ) 
 }
