@@ -6,45 +6,33 @@
   color: $color;
 }
 .course-list-main {
-  padding: 12px !important;
+  padding: 16px 16px 0px 16px !important;
   border-radius: 16px;
   border: 1px solid $landing_text_color;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 4%;
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    li {
-      list-style: none;
+  .course-list-img {
+    display: inline-block;
+    width: 190px;
+    height: 100px;
+    margin-right: 2%;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 6px;
     }
-    .course-list-img {
-      display: inline-block;
-      width: 190px;
-      height: 100px;
-      margin-right: 2%;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 6px;
-      }
+  }
+  .col-md-7 {
+    h5 {
+      @include course-list-style(
+        20px,
+        500,
+        26px,
+        $font-jakarta-plus,
+        $cardmoduletextbody
+      );
     }
-    .course-list-content {
-        .course-list-star-icon{
-            margin-left: 1%;
-        }
-      position: relative;
-      h5 {
-        @include course-list-style(
-          20px,
-          500,
-          26px,
-          $font-jakarta-plus,
-          $cardmoduletextbody
-        )
-      }
+    .course-content-title {
       p {
         @include course-list-style(
           16px,
@@ -53,8 +41,8 @@
           $font-jakarta-plus,
           $card_module_info
         );
+        margin-right: 1%;
         display: inline-block;
-        margin-right: 5%;
       }
       .overall-star {
         @include course-list-style(
@@ -65,48 +53,43 @@
           $card_module_info
         );
         display: inline-block;
-        margin-left: 2%;
+        margin-left: 1%;
       }
-      span {
-        background-color: $card_module_info;
-        width: 4px;
-        height: 4px;
-        border-radius: 100%;
-        display: inline-block;
-        position: absolute;
-        left: 38%;
-        top: 41%;
-      }
-      .course-list-information {
-
-          li {
-            list-style: none;
-            display: flex;
-            margin-right: 4%;
-            pre {
-                overflow-x: hidden;
-              @include course-list-style(
-                14px,
-                400,
-                21.7px,
-                $font-jakarta-plus,
-                $card_module_info
-              );
-              margin-right: 4%;
-            }
+    }
+    .course-content-info{
+      ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        width: 100%;
+        li{
+          width: 20%;
+          list-style: none;
+          
+          p{
+            display: inline-block;
+            @include course-list-style(
+              14px,
+              400,
+              21.7px,
+              $font-jakarta-plus,
+              $card_module_info
+            );
+            margin-left: 2%;
           }
         }
       }
     }
-    h4 {
-        @include course-list-style(
-          32px,
-          bold,
-          38.4px,
-          $font-general,
-          $cardmoduletextbody
-        );
-        padding-top: 3%;
-      }
-  }
+  }h4 {
+  @include course-list-style(
+    32px !important,
+    bold !important,
+    38.4px !important,
+    $font-general,
+    $cardmoduletextbody
+  );
+  padding-top: 15%;
+  padding-left: 65%;
+}
+}
 

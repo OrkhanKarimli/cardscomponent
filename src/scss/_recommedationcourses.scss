@@ -1,0 +1,15 @@
+@mixin text_style($size, $height, $weight, $color, $family) {
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+    color: $color;
+    font-family: $family;
+  }
+.recom-courses-main{
+    padding: 56px 80px 24px 80px !important;
+    background-color: $author_info_color;
+    h4{
+        @include text_style(32px,38.4px ,bold ,$cardmoduletextbody ,$font-general);
+        margin-bottom: 5%;
+    }
+}

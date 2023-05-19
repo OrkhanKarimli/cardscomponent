@@ -3,55 +3,61 @@ import { ReactComponent as Star } from "../icons/Star.svg";
 import { ReactComponent as Clock } from "../icons/Clock.svg";
 import { ReactComponent as Stack } from "../icons/Stack.svg";
 import { ReactComponent as Beginer } from "../icons/Beginer.svg";
-const CourseList = ({
-    cardHead,
-    cardimg
-}) => {
+const CourseList = ({ cardHead, cardimg ,className }) => {
   return (
-        <div className="col-md-12 course-list-main">
-          <ul>
-            <li className="course-list-img">
-              <img src={cardimg} alt="" />
-            </li>
-            <li className="course-list-content">
-              <h5>{cardHead}</h5>
+        <div className={`course-list-main ${className}`}>
+
+            <div className="col-md-3 course-list-img">
+            <img src={cardimg} alt="" />
+            </div>
+            <div className="col-md-7">              <h5>{cardHead}</h5>
+              <div className="course-content-title">
+
               <p>By Sen Janson</p>
-              <span></span>
               <i className="course-list-star-icon">
                 <Star />
               </i>
 
               <p className="overall-star">4.8 (122)</p>
-
+              </div>
+              <div className="course-author-rating">
+             
+              </div>
+              <div className="course-content-info">
               <ul className="course-list-information">
                 <li>
                   <i>
                     <Clock />
                   </i>
-                  <pre className="info-text">40 Minutes</pre>
+                  <p className="info-text">40 Minutes</p>
                 </li>
                 <li>
                   <i>
                     <Stack />
                   </i>
 
-                  <pre className="info-text">21 Modules </pre>
+                  <p className="info-text">21 Modules </p>
                 </li>
                 <li>
                   <i>
                     <Beginer />
                   </i>
 
-                  <pre className="info-text">Beginer Level </pre>
+                  <p className="info-text">Beginer Level </p>
                 </li>
               </ul>
-              
-            </li>
-          </ul>
-          <h4>
-               $128
-              </h4>
-        </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+            <h4>
+              128$
+            </h4>
+            </div>
+           
+          </div>
+
+
+
 
   );
 };
