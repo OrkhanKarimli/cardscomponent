@@ -1,20 +1,24 @@
 import React from "react";
 import { ReactComponent as CalendarsvgIcon } from "../icons/CalendarBlank.svg";
-const Eventscard = () => {
+const Eventscard = ({
+  eventHead,
+  className,
+  eventLabel,
+  eventImg
+}) => {
   return (
-    <div
-      className="container"
-      style={{ backgroundColor: "#F9F9F9", padding: "2%" }}
-    >
+
       
-        <div className="col-md-4 eventscard_main">
+        <div className={`eventscard_main ${className}`}>
             <div className="row">
-                <div className="events_image"></div>
+                <div className="events_image">
+                  <img src={eventImg} alt="" />
+                </div>
           <div className="col-md-12">
             <ul>
               <li>
-                <p>User Experience Design 
-                <label>Basic Essential Principals</label></p>
+                <p>{eventHead} 
+                <label>{eventLabel}</label></p>
               </li>
               <li>
                 <p>By Sen Janson</p>{" "}
@@ -35,7 +39,6 @@ const Eventscard = () => {
           
         </div>
      
-    </div>
   );
 };
 
