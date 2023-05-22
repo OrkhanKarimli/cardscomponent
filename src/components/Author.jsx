@@ -7,7 +7,10 @@ export const Author = ({
   authorHourses,
   authorSpeciality,
   authorIcon,
-  authorClass
+  authorClass,
+  authorColor1,
+  authorColor,
+  
 }) => {
   return (
  
@@ -20,20 +23,20 @@ export const Author = ({
           <div className="col-md-12 author_information">
             <ul>
               <li>
-                <p>{authorName}</p>
+                <p className={`${ authorColor1}`}>{authorName}</p>
               </li>
               <li>
-                <p>{authorCourses}</p>
+                <p className={`${ authorColor}`}>{authorCourses}</p>
               </li>
               <li>
-                <h4>{authorPayment}</h4>
-                <p>{`/${authorHourses}`}</p>
+                <h4 className={`${ authorColor1}`}>{authorPayment}</h4>
+                <p  className={`${ authorColor1}`}>{`/${authorHourses}`}</p>
               </li>
               <li>
                 <i>
                   { authorIcon}
                 </i>
-                <p>{authorSpeciality}</p>
+                <p >{authorSpeciality}</p>
               </li>
             </ul>
           </div>

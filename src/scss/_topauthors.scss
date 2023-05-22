@@ -1,0 +1,25 @@
+.top-authors-main{
+    padding: 24px 80px 56px 80px !important;
+    background-color: $author_info_color;
+    h4{
+        font-size: 32px;
+        line-height: 38.4px;
+        font-weight: bold;
+        font-family: $font-general;
+        color: $cardmoduletextbody;
+        margin-bottom: 3%;
+    }
+}
+.top-author-style{
+    background-color: white;
+    border: 1px solid $landing_text_color;
+    width: 259px !important;
+    margin-right: 2% !important;
+}
+.author-color-style{
+    color: $card_module_info !important;
+}
+.author-color-style1{
+    color: $cardmoduletextbody !important;
+}
+
