@@ -1,0 +1,54 @@
+@mixin text_style($size, $weight, $height, $family, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-family: $family;
+  color: $color;
+}
+.fixposition{
+    position: absolute;
+    top: 0;
+}
+.play-head-main {
+  margin-top: 7%;
+  background-color: $infoiconcol;
+  padding: 56px 80px 56px 80px !important;
+  display: flex;
+  justify-content: space-between;
+
+    .play-head-left {
+      h3 {
+        @include text_style(40px, 500, 48px, $font-general, $author_info_color);
+      }
+      
+      p {
+        @include text_style(
+          20px,
+          400,
+          26px,
+          $font-jakarta-light,
+          $landing_text_color
+        );
+      }
+    }
+    .play-head-right {
+      p {
+        i{
+            margin-right: 5%;
+        }
+        text-align: center;
+        padding: 20px 40px 20px 40px;
+        border: 1px solid $card_module_icon_color;
+        background-color: transparent;
+        border-radius: 1000px;
+        @include text_style(
+          18px,
+          600,
+          24.3px,
+          $font-jakarta-plus,
+          $card_module_icon_color
+        );
+      }
+    }
+  
+}
