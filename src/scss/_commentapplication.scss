@@ -1,0 +1,48 @@
+.comment-main{
+    margin-top: 10%;
+    .comment-input{
+        border: 1px solid $landing_text_color;
+        border-radius: 16px;
+        input{
+           
+            border: none;
+            width: 100%;
+            padding: 12px 16px 32px 16px !important;
+            background-color: landing_text_color;
+            color: $card_module_info;
+        }
+        input:focus{
+            outline: none;
+        }
+        .comment-parts{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-color: landing_text_color;
+            ul{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                li{
+                 margin-right: 3%;
+                }
+            }
+            .comments-button{
+                background-color: transparent;
+                border: none;
+                p{
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 21.7px;
+                    color: white;
+                    padding: 13px 26px 13px 26px;
+                    border-radius: 1000px;
+                    background-color: $uicolor;
+
+                }
+            }
+        }
+    }
+}

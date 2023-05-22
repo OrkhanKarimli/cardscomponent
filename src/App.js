@@ -1,6 +1,6 @@
 import "./App.css";
 import "./scss/style.scss";
-import LearnerSearchCategories from "./components/PlayCoursesHead";
+import LearnerSearchCategories from "./components/CommentApplication";
 function App() {
   return(
 <LearnerSearchCategories/>
