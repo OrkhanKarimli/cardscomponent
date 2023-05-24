@@ -1,0 +1,95 @@
+@mixin learner_browse-text($size, $weight, $height, $family, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    font-family: $family;
+    color: $color;
+  }
+.landing-browse-main{
+    padding: 160px 56px 80px 56px !important;
+    overflow-y: hidden;
+    text-align: center;
+    background-color: $infoiconcol;
+    position: relative;
+    overflow-x: hidden;
+    text-align: justify;
+    .navpos{
+        position: absolute;
+        top: 0;
+    }
+    .navpospattern{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .landing_browse_header{
+        text-align: justify;
+        z-index: 999;
+        h1{
+            @include learner_browse-text(40px,bold ,48px ,$font-general,$author_info_color);
+            margin-bottom: 2%;
+        }
+        p{
+            @include learner_browse-text(20px,400,26px ,$font-jakarta-plus ,$landing_text_color );
+            margin-bottom: 3%;
+        }
+    }
+    .landing_browse_categories{
+        text-align: left;
+        z-index: 999;
+        p{
+            @include learner_browse-text(16px,400,24px ,$font-jakarta-plus ,$landing_text_color );
+            margin-top: 2%;
+        }
+        .landing-categories-browse-form{
+            background-color: #ffffff;
+            padding: 8px 8px 8px 24px;
+            border-radius: 100px;
+            border: none;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            input {
+              @include learner_browse-text(16px, 400,24px,$font-jakarta-plus,#a8a8a8);
+              border: none;
+              width: 80%;
+            }
+            input:focus {
+              outline: none;
+            }
+            select {
+              background-color: white;
+              @include landing_text(16px, 400, $infoiconcol, 24px);
+              border: none;
+            }
+            select:focus {
+              outline: none;
+            }
+            button {
+              text-align: center;
+              width: 56px;
+              height: 56px;
+              border-radius: 1000px;
+              color: white;
+              background-color: $card_module_icon_color;
+              border: none;
+            }
+        }
+    }
+    h4{
+        @include learner_browse-text(32px,bold,38.4px ,$font-general,$author_info_color );
+        margin-bottom: 3%;
+        margin-top: 5%;
+    }
+    .search-categories-learner{
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                list-style: none;
+                margin-right: 0%;
+                margin-bottom: 3%;
+            }
+        }
+    }
+}
