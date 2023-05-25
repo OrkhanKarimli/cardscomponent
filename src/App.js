@@ -1,6 +1,6 @@
 import "./App.css";
 import "./scss/style.scss";
-import LearnerSearchCategories from "./components/LearnerBrowseCategories";
+import LearnerSearchCategories from "./components/AuthorCourse";
 function App() {
   return(
 <LearnerSearchCategories/>
