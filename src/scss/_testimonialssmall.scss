@@ -24,25 +24,28 @@
     display: flex;
     justify-content: flex-end;
     }
-    .col-md-6 {
+    .col-md-8 {
       ul {
         list-style: none;
         padding-left: 1rem !important;
-        li:first-child {
-          list-style: none;
-          @include textstyle();
-        }
-        li:last-child {
+        li{
           list-style: none;
           font-size: 16px;
           font-weight: 500;
           font-family: $font-jakarta-med;
-          color: #7c7c7c;
+          color: $cardmoduletextbody;
+        }
+        .card-author-position{
+          list-style: none;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: $font-jakarta-med;
+          color: $card_module_info;
         }
       }
       p {
         @include test_mon_xs_text(
-          16px,
+          14px,
           $infocolor,
           $font-jakarta-light,
           24px,

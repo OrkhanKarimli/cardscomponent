@@ -1,0 +1,32 @@
+.author-review-main {
+  background-color: $author_info_color;
+  padding: 24px 80px 24px 80px !important;
+  .author-title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3%;
+    h4 {
+      font-size: 32px;
+      line-height: 38.4px;
+      font-family: $font-general;
+      color: $cardmoduletextbody;
+      font-weight: bold;
+    }
+    .author-stars-verall {
+        display: flex;
+      h5 {
+        font-family: $font-general;
+        color: $cardmoduletextbody;
+        font-weight: bold;
+      }
+      span {
+        font-family: $font-jakarta-light;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $card_module_info;
+      }
+    }
+  }
+}
