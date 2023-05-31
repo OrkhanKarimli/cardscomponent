@@ -8,6 +8,7 @@ import img3 from "../image/authorimg6.png"
 const AuthorReview = () => {
   return (
     <div className="container-fluid author-review-main">
+      
       <div className="row">
         <div className="col-md-9">
           <div className="row">

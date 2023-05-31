@@ -1,0 +1,21 @@
+.similar-course-main{
+    background-color: $author_info_color;
+    padding: 24px 0px 24px 80px !important;
+    overflow-x: hidden;
+    h5{
+        font-size: 32px;
+        font-weight: bolder;
+        line-height: 38.4px;
+        font-family: $font-general;
+        margin-bottom: 3%;
+    }
+}
+.similar-courses-fix{
+    
+    h4{
+        padding-left: 40%;
+    }
+    li{
+        width: 23% !important;
+    }
+}
